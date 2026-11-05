@@ -1,0 +1,73 @@
+{
+  "bairros": {
+    "Centro": 1.2,
+    "Pilar": 2.0,
+    "Barra": 2.8,
+    "Bauxita": 4.5,
+    "Saramenha": 6.0
+  },
+  "restaurantes": [
+    {
+      "id": "r1",
+      "nome": "Forno da Praça",
+      "culinaria": "pizza",
+      "bairro": "Centro",
+      "taxa_base": 4.0,
+      "pedido_minimo": 30.0,
+      "itens": [
+        {"id": "r1-01", "nome": "Pizza Margherita (grande)", "categoria": "pizza", "preco": 54.9, "tags": ["vegetariano"]},
+        {"id": "r1-02", "nome": "Pizza Calabresa (grande)", "categoria": "pizza", "preco": 52.9, "tags": []},
+        {"id": "r1-03", "nome": "Pizza Quatro Queijos (grande)", "categoria": "pizza", "preco": 59.9, "tags": ["vegetariano"]},
+        {"id": "r1-04", "nome": "Pizza Vegana de Legumes (grande)", "categoria": "pizza", "preco": 57.9, "tags": ["vegetariano", "vegano", "sem_lactose"]},
+        {"id": "r1-05", "nome": "Refrigerante lata 350 ml", "categoria": "bebida", "preco": 6.5, "tags": ["vegetariano", "vegano", "sem_gluten", "sem_lactose"]},
+        {"id": "r1-06", "nome": "Suco de laranja 500 ml", "categoria": "bebida", "preco": 9.0, "tags": ["vegetariano", "vegano", "sem_gluten", "sem_lactose"]}
+      ]
+    },
+    {
+      "id": "r2",
+      "nome": "Sabor de Minas",
+      "culinaria": "mineira",
+      "bairro": "Pilar",
+      "taxa_base": 5.0,
+      "pedido_minimo": 25.0,
+      "itens": [
+        {"id": "r2-01", "nome": "Feijão tropeiro com torresmo", "categoria": "prato", "preco": 38.0, "tags": ["sem_lactose"]},
+        {"id": "r2-02", "nome": "Frango com quiabo e angu", "categoria": "prato", "preco": 36.5, "tags": ["sem_gluten", "sem_lactose"]},
+        {"id": "r2-03", "nome": "Tutu de feijão vegetariano", "categoria": "prato", "preco": 32.0, "tags": ["vegetariano", "sem_gluten"]},
+        {"id": "r2-04", "nome": "Pão de queijo (6 unidades)", "categoria": "entrada", "preco": 14.0, "tags": ["vegetariano", "sem_gluten"]},
+        {"id": "r2-05", "nome": "Doce de leite com queijo", "categoria": "sobremesa", "preco": 12.0, "tags": ["vegetariano", "sem_gluten"]},
+        {"id": "r2-06", "nome": "Suco de maracujá 500 ml", "categoria": "bebida", "preco": 8.5, "tags": ["vegetariano", "vegano", "sem_gluten", "sem_lactose"]}
+      ]
+    },
+    {
+      "id": "r3",
+      "nome": "Sushi Ouro",
+      "culinaria": "japonesa",
+      "bairro": "Barra",
+      "taxa_base": 6.0,
+      "pedido_minimo": 40.0,
+      "itens": [
+        {"id": "r3-01", "nome": "Combo 20 peças", "categoria": "combo", "preco": 69.9, "tags": ["sem_lactose"]},
+        {"id": "r3-02", "nome": "Temaki de salmão", "categoria": "temaki", "preco": 29.9, "tags": ["sem_lactose"]},
+        {"id": "r3-03", "nome": "Temaki vegetariano", "categoria": "temaki", "preco": 24.9, "tags": ["vegetariano", "vegano", "sem_lactose"]},
+        {"id": "r3-04", "nome": "Yakissoba de legumes", "categoria": "prato", "preco": 34.9, "tags": ["vegetariano", "vegano", "sem_lactose"]},
+        {"id": "r3-05", "nome": "Chá verde gelado 500 ml", "categoria": "bebida", "preco": 8.0, "tags": ["vegetariano", "vegano", "sem_gluten", "sem_lactose"]}
+      ]
+    },
+    {
+      "id": "r4",
+      "nome": "Verde Vivo",
+      "culinaria": "saudável",
+      "bairro": "Bauxita",
+      "taxa_base": 3.5,
+      "pedido_minimo": 20.0,
+      "itens": [
+        {"id": "r4-01", "nome": "Bowl de quinoa com legumes", "categoria": "prato", "preco": 33.0, "tags": ["vegetariano", "vegano", "sem_gluten", "sem_lactose"]},
+        {"id": "r4-02", "nome": "Salada Caesar com frango", "categoria": "prato", "preco": 31.0, "tags": []},
+        {"id": "r4-03", "nome": "Wrap de grão-de-bico", "categoria": "prato", "preco": 27.0, "tags": ["vegetariano", "vegano", "sem_lactose"]},
+        {"id": "r4-04", "nome": "Smoothie de frutas vermelhas", "categoria": "bebida", "preco": 15.0, "tags": ["vegetariano", "vegano", "sem_gluten", "sem_lactose"]},
+        {"id": "r4-05", "nome": "Brownie sem glúten", "categoria": "sobremesa", "preco": 13.0, "tags": ["vegetariano", "sem_gluten"]}
+      ]
+    }
+  ]
+}

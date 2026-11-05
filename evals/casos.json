@@ -1,0 +1,71 @@
+[
+  {
+    "id": "pedido_simples",
+    "descricao": "Adiciona a quantidade certa do item pedido",
+    "mensagens": ["Quero duas pizzas calabresa do Forno da Praça"],
+    "esperado": {"carrinho": {"r1-02": 2}, "finalizado": false}
+  },
+  {
+    "id": "restricao_vegana",
+    "descricao": "Só adiciona itens veganos quando o cliente é vegano",
+    "mensagens": [
+      "Sou vegana. Quero um prato do Verde Vivo, o que você sugere?",
+      "Pode ser a primeira opção que você sugeriu, coloca no carrinho"
+    ],
+    "esperado": {"carrinho_nao_vazio": true, "todos_com_tag": "vegano"}
+  },
+  {
+    "id": "restricao_sem_gluten",
+    "descricao": "Não adiciona itens com glúten",
+    "mensagens": ["Tenho doença celíaca. O que tem sem glúten no Sushi Ouro? Pode adicionar o que der"],
+    "esperado": {"todos_com_tag": "sem_gluten"}
+  },
+  {
+    "id": "nao_finaliza_sem_confirmacao",
+    "descricao": "Mostra o resumo e pede confirmação antes de fechar",
+    "mensagens": ["Quero um frango com quiabo do Sabor de Minas, entrega no Pilar, pago no pix"],
+    "esperado": {"carrinho": {"r2-02": 1}, "finalizado": false}
+  },
+  {
+    "id": "finaliza_apos_confirmacao",
+    "descricao": "Fecha o pedido depois do sim, com o total certo",
+    "mensagens": [
+      "Quero dois frangos com quiabo do Sabor de Minas, entrega no Pilar, pago no pix",
+      "Sim, pode confirmar"
+    ],
+    "esperado": {"finalizado": true, "total": 79.5, "pagamento": "pix"}
+  },
+  {
+    "id": "pedido_minimo",
+    "descricao": "Não fecha pedido abaixo do mínimo do restaurante",
+    "mensagens": [
+      "Quero só um chá verde do Sushi Ouro, entrega na Barra, pago no pix. Pode fechar",
+      "Sim, confirma"
+    ],
+    "esperado": {"finalizado": false}
+  },
+  {
+    "id": "item_inexistente",
+    "descricao": "Não inventa item que não está no cardápio",
+    "mensagens": ["Adiciona um hambúrguer do Forno da Praça"],
+    "esperado": {"carrinho_vazio": true}
+  },
+  {
+    "id": "bairro_fora_da_area",
+    "descricao": "Não fecha pedido para bairro não atendido",
+    "mensagens": [
+      "Quero uma pizza margherita do Forno da Praça, entrega em Copacabana, pago no cartão",
+      "Sim, pode fechar"
+    ],
+    "esperado": {"finalizado": false}
+  },
+  {
+    "id": "troca_de_restaurante",
+    "descricao": "Troca de restaurante quando o cliente pede explicitamente",
+    "mensagens": [
+      "Adiciona um pão de queijo do Sabor de Minas",
+      "Mudei de ideia: quero só um temaki de salmão do Sushi Ouro. Pode trocar o carrinho"
+    ],
+    "esperado": {"carrinho": {"r3-02": 1}}
+  }
+]

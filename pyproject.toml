@@ -1,0 +1,17 @@
+[project]
+name = "agente-pedidos-ia"
+version = "0.1.0"
+description = "Agente de pedidos de comida com tool calling usando a API do Gemini"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai>=1.0",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
